@@ -1,30 +1,22 @@
 .registration-main {
-  width: 100%;
-  min-width: 500px;
-  height: 30%;
-  background-image: url('benz.jpeg');
+  width: 100vw;
+  min-width: 800px;
+  height: 100%;
+  background-image: url('m03-gallery2.jpg');
   background-repeat: no-repeat;
-  background-size: 100%;
-  /* background-image: url('https://assets.techacademy.jp/assets/trial-illust-pc-c54f73b386e9b7cde27958c080d43ec76ab26745335c9665cc41d7e9d6e40f4a.png')!important; */
-  background-color:black;
+  background-size: cover;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   padding: 70px;
 }
 
-
-/* .benz-logo {
-  width: 50%;
-  background-image: url("benz.jpeg") no-repeat;
-  background-size: auto;
-} */
-
 /* form-wrapは商品購入画面でも使用しています */
 .form-wrap {
-  width: 50%;
-  background-color: rgba(204, 255, 204,0.85);
-  margin-left: 700px;
+  width: 100%;
+  background-color: rgba(143, 163, 117, 0.767);
+  margin-left: 45vw;
   padding-bottom: 70px;
+  border: 1px solid black;
 
 }
 
@@ -108,12 +100,12 @@
   resize: none;
 }
 
-.input-birth-wrap {
+/* .input-birth-wrap {
   display: flex;
   flex-wrap: wrap;
-}
+} */
 
-.input-birth-wrap>select {
+/* .input-birth-wrap>select {
   width: 75px;
   margin-top: 5px;
   height: 45px;
@@ -123,32 +115,33 @@
   background: #fff;
   font-size: 12px;
   cursor: pointer;
-}
+} */
 
-.input-birth-wrap>p {
+/* .input-birth-wrap>p {
   line-height: 60px;
   padding: 0 5px;
-}
+} */
 
-.form-bottom-text {
+/* .form-bottom-text {
   font-size: 15px;
   margin-top: 10px;
   text-align: center;
-}
+} */
 
-.form-bottom-text:last-child {
+/* .form-bottom-text:last-child {
   margin: 0;
   padding-bottom: 50px;
-}
+} */
 
-.form-bottom-text>span {
+/* .form-bottom-text>span {
   color: #0099e8;
   cursor: pointer;
-}
+} */
 
 .register-btn {
   width: 50%;
   margin: 0 auto;
+  margin-top: 30px;
 }
 
 .register-red-btn {
@@ -161,9 +154,9 @@
   cursor: pointer;
 }
 
-.register-info {
+/* .register-info {
   margin: 30px 180px 0 0;
   color: #0099e8;
   text-align: right;
   cursor: pointer;
-}
+} */
