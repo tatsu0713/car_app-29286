@@ -22,3 +22,22 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+
+# テーブル設計
+
+## users テーブル
+
+| Column             |  Type   | Options      |
+| ------------------ | --------| -------------|
+| nickname           | string  | null: false  |
+| email              | string  | null: false  |
+| encrypted_password | string  | null: false  |
+| favorite_car_id    | integer | null: false  |
+
+
+## Association
+
+- has_many :items
+- belongs_to_active_hash :favorite_car
