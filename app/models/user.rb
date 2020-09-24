@@ -7,11 +7,6 @@ class User < ApplicationRecord
   has_many :items
   belongs_to_active_hash :favorite_car
 
-
-  with_options presence: true do
-    validates :nickname
-    validates :email
-    validates :password
-  end
+  validates :nickname, presence: true
   validates :favorite_car_id, numericality: { other_than: 1, message: 'を選択してください'}
 end

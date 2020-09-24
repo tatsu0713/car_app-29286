@@ -1,61 +1,37 @@
-.login-btn {
-  width: 50%;
-  margin: 0 auto;
-  margin-top: 50px;
-}
-
-.login-red-btn {
-  width: 100%;
-  background: #ea352d;
-  border: 1px solid #ea352d;
-  color: #fff;
-  line-height: 48px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.login-flash-message {
-  text-align: center;
-  color: red;
-}
-
 .session-main {
   width: 100vw;
   min-width: 800px;
   height: 80%;
   background-image: url('audi-1480086_1280.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   display: flex;
-  justify-content: flex-end;
-  padding: 70px;
+  justify-content: right;
+  padding: 130px;
 }
 
-/* form-wrapは商品購入画面でも使用しています */
-.form-wrap {
-  width: 100%;
-  background-color: rgba(143, 163, 117, 0.767);
-  margin-left: 45vw;
+.form-all {
+  width: 46%;
+  background-color: rgba(185, 200, 223, 0.637);
   padding-bottom: 70px;
   border: 1px solid black;
-
 }
 
-.form-header {
+.form-semi-all {
   width: 100%;
   height: 120px;
   text-align: center;
   font-size: 22px;
 }
 
-.form-header-text {
+.form-all-text {
   line-height: 100px;
   border-bottom: 1px solid #533333;
   font-weight: bold;
   font-family: serif;
 }
 
-.form-group {
+.form-team {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -63,22 +39,22 @@
   padding-top: 20px;
 }
 
-.form-group:first-child {
+.form-team:first-child {
   padding: 0;
 }
 
-.form-text-wrap {
+.form-string-wrap {
   width: 100%;
   height: 20%;
 }
 
-.form-text {
+.form-string {
   font-size: 14px;
   font-weight: bold;
   font-family: serif;
 }
 
-.input-default {
+.input-confirm {
   width: 100%;
   margin-top: 5px;
   height: 48px;
@@ -91,10 +67,24 @@
   resize: none;
 }
 
+.login-btn {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
 
-.info-text {
-  color: rgb(43, 23, 23);
-  font-size: 15px;
-  font-family: serif;
-  margin-top: 3px;
+.login-red-btn {
+  width: 100%;
+  background: #ea352d;
+  border: 1px solid white;
+  color: rgb(207, 200, 191);
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.login-flash-message {
+  text-align: center;
+  color: rgb(85, 48, 34);
 }

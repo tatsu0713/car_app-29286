@@ -8,7 +8,7 @@
       新規ユーザー登録
     </h1>
   </div>
-  <%= render 'shared/error_messages', model: @user %>
+  <%= render 'shared/error_messages', model: f.object %>
   <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">Nickname</label>
@@ -44,7 +44,7 @@
       <span class="indispensable">必須</span>
     </div>
     <div class='input-name-wrap'>
-      <%= f.collection_select(:favorite_car_id, FavoriteCar.all, :id, :name, {}, {class:"input-default", id:"favorite-car-name"})%>
+      <%= f.collection_select(:favorite_car_id, FavoriteCar.all, :id, :name, {}, {class:"input-favorite-car", id:"favorite-car-name"})%>
     </div>
   </div>
   <div class='register-btn'>
