@@ -9,21 +9,23 @@ a {
 /* 画面上部の「人生を変えるフリマアプリ」帯部分 */
 .title-contents {
   width: 100vw;
-  background-image: image-url('furima-header01.png');
+  height: 100%;
+  background-image: url('81207cd52f851-2619-499d-870f-65b3e0205c0f_l.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  // background-position: top center;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 5vh 15vw;
+  padding: 50vh 30vw;
   color: #fff;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
 .service-title {
-  font-size: 8vh;
+  font-size: 12vh;
+  font-family: cursive;
 }
 
 .service-explain {
@@ -48,75 +50,75 @@ a {
 /* //画面上部の「人生を変えるフリマアプリ」帯部分 */
 
 /* FURIMAが選ばれる3つの理由部分 */
-.select-reason-contents {
-  padding: 5vh 15vw;
-}
+// .select-reason-contents {
+//   padding: 5vh 15vw;
+// }
 
-.select-reason-contents>.title {
-  text-align: center;
-  font-size: 3.5vh;
-  font-weight: bold;
-  margin-bottom: 5vh;
-  position: relative;
-}
+// .select-reason-contents>.title {
+//   text-align: center;
+//   font-size: 3.5vh;
+//   font-weight: bold;
+//   margin-bottom: 5vh;
+//   position: relative;
+// }
 
-.select-reason-contents>.title::after {
-  content: '';
-  width: 70px;
-  height: 4px;
-  background-color: #3ccace;
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
+// .select-reason-contents>.title::after {
+//   content: '';
+//   width: 70px;
+//   height: 4px;
+//   background-color: #3ccace;
+//   position: absolute;
+//   bottom: -10px;
+//   left: 50%;
+//   transform: translateX(-50%);
+// }
 
-.reason-lists {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+// .reason-lists {
+//   display: flex;
+//   justify-content: space-between;
+//   flex-wrap: wrap;
+// }
 
-.reason-lists>.list {
-  width: 33vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
+// .reason-lists>.list {
+//   width: 33vh;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   position: relative;
+// }
 
-.list-pict {
-  margin-bottom: 20px;
-  width: 100%;
-}
+// .list-pict {
+//   margin-bottom: 20px;
+//   width: 100%;
+// }
 
-.reason-list-number {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  font-size: 30px;
-  text-align: center;
-  line-height: 60px;
-  background-color: #3ccace;
-  color: #fff;
-}
+// .reason-list-number {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 60px;
+//   height: 60px;
+//   font-size: 30px;
+//   text-align: center;
+//   line-height: 60px;
+//   background-color: #3ccace;
+//   color: #fff;
+// }
 
-.reason-list-text {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 50px;
-}
+// .reason-list-text {
+//   font-weight: bold;
+//   font-size: 24px;
+//   line-height: 50px;
+// }
 
-.reason-list-blue-text {
-  color: #3ccace;
-}
+// .reason-list-blue-text {
+//   color: #3ccace;
+// }
 
-.reason-list-description {
-  font-size: 18px;
-  margin-top: 20px;
-}
+// .reason-list-description {
+//   font-size: 18px;
+//   margin-top: 20px;
+// }
 
 /* //FURIMAが選ばれる3つの理由部分 */
 
@@ -124,7 +126,7 @@ a {
 /* 画面中央の「会員数日本一位」帯部分*/
 .ad-contents {
   width: 100vw;
-  background-image: image-url('furima-header02.png');
+  background-image: url('DSC8793-1-1620x1080.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -132,7 +134,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 5vh 15vw;
+  padding: 50vh 30vw;
   color: #fff;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
