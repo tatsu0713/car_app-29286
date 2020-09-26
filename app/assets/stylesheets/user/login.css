@@ -28,7 +28,7 @@
   line-height: 100px;
   border-bottom: 1px solid #533333;
   font-weight: bold;
-  font-family: serif;
+  font-family: cursive;
 }
 
 .form-team {
@@ -81,7 +81,7 @@
   line-height: 48px;
   font-size: 14px;
   cursor: pointer;
-  font-family: cursive;
+  font-family: serif;
 }
 
 .login-flash-message {
