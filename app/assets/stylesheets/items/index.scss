@@ -50,7 +50,7 @@ a {
   align-items: flex-end;
   position: absolute;
   margin: 25px 50px 0 0;
-  font-size: 24px;
+  font-size: 20px;
   font-family: cursive;
 }
 
@@ -145,7 +145,6 @@ a {
   font-family: cursive;
   font-style: oblique;
   padding-left: 60px;
-  -webkit-background-clip: text;
   color: #e0f3f2;
   position: relative;
   display: inline-block;
@@ -172,7 +171,7 @@ a {
 }
 
 .service-explain {
-  font-size: 2.8vh;
+  font-size: 17px;
   position: absolute;
   margin: 180px;
   font-family: serif;
@@ -270,24 +269,213 @@ a {
 
 
 /* 画面中央の「会員数日本一位」帯部分*/
-.ad-contents {
+
+.sub {
+  background: -webkit-linear-gradient(top right, #E2E8E6 0%, #CDD3CD 100%), -webkit-linear-gradient(right, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
+  background: linear-gradient(to bottom left, #E2E8E6 0%, #CDD3CD 100%), linear-gradient(to left, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
+  background-blend-mode: screen;
+}
+
+.center-contents {
   width: 100vw;
-  background-image: url('DSC8793-1-1620x1080.jpg');
+  height: 1300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.center-topic-contents {
+  width: 70vw;
+  height: 1000px;
+  margin-top: 300px;
+}
+
+.center-first-contents {
+  display: flex;
+}
+
+.first-content {
+  width: 80%;
+  height: 250px;
+  background-image: url('img_7691-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  // opacity: 0.8;
+}
+
+.first-white-content {
+  width: 60%;
+  height: 250px;
+  background-color: black;
+}
+
+.center-second-contents {
+  display: flex;
+}
+
+.second-content {
+  width: 45%;
+  height: 250px;
+  background-image: url('caf507bb.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  // opacity: 0.8;
+}
+
+.second-white-content {
+  width: 60%;
+  height: 250px;
+  background-color: black;
+}
+
+.center-third-contents {
+  display: flex;
+}
+
+.third-content {
+  width: 80%;
+  height: 250px;
+  background-image: url('original.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  // opacity: 0.8;
+}
+
+.third-white-content {
+  width: 60%;
+  height: 250px;
+  background-color: black;
+}
+
+/* 商品一覧 */
+
+
+
+h2.new-title {
+  position: relative;
+  padding: 5px 40px 5px 80px;
+  border-bottom: 1px solid black;
+  font-weight: lighter;
+  font-family: serif;
+  font-size: 23px;
+}
+
+h2.new-title:before, h2.new-title:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+h2.new-title:before {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid black;
+  bottom: -16px;
+  left: 8px;
+}
+
+h2.new-title:after {
+  height: 64px;
+  border-left: 1px solid black;
+  bottom: -32px;
+  left: 24px;
+}
+
+.item-contents {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 50vh 30vw;
-  color: #fff;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  align-items: center;
+  padding: 10vh 0;
 }
+
+.item-contents>.title {
+  font-size: 5vh;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.item-contents>.subtitle {
+  font-size: 3vh;
+  margin: 1vh 0;
+  text-decoration: none;
+  color: #3ccace;
+  font-weight: bold;
+}
+
+.item-lists {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.item-lists>.list {
+  width: 37vh;
+  padding: 1vw;
+  background-color: #FFF;
+}
+
+
+.item-img-content {
+  position: relative;
+}
+
+.item-img {
+  width: 33vh;
+  height: 33vh;
+}
+
+
+// .sold-out>span {
+//   color: #FFF;
+//   font-size: 45px;
+//   font: bold;
+// }
+
+
+.item-info {
+  background-color: #FFF;
+  color: black;
+  padding: 1vw;
+}
+
+.item-name {
+  font-size: 2.5vh;
+}
+
+.item-price {
+  font-size: 1.5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.star-btn {
+  display: flex;
+  align-items: center;
+}
+
+.star-icon {
+  height: 2vh;
+  width: 2vh;
+  margin-right: 0.5vw;
+}
+
+.star-count {
+  font-size: 2vh;
+}
+
+.hidden{
+  display: none;
+}
+/* //商品一覧 */
 
 .ad-title {
   font-size: 5vh;
   margin-bottom: 2vh;
+  background: rgba(255,255,255,0.5);
 }
 
 .ad-explain {
@@ -311,7 +499,7 @@ a {
 
 /* //画面中央の「会員数日本一位」帯部分 */
 
-/* FURIMAの特徴 */
+/* wegの特徴 */
 .feature-contents {
   padding: 5vh 15vw;
 }
@@ -359,105 +547,33 @@ a {
   margin-top: 20px;
 }
 
-/* //FURIMAの特徴 */
-
-/* 商品一覧 */
-
-.item-contents {
-  background-color: #FFF;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10vh 0;
-}
-
-.item-contents>.title {
-  font-size: 5vh;
-  line-height: 1.4;
-  font-weight: bold;
-}
-
-.item-contents>.subtitle {
-  font-size: 3vh;
-  margin: 1vh 0;
-  text-decoration: none;
-  color: #3ccace;
-  font-weight: bold;
-}
-
-.item-lists {
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.item-lists>.list {
-  width: 37vh;
-  padding: 1vw;
-  background-color: #FFF;
-}
+/* //wegの特徴 */
 
 
-.item-img-content {
-  position: relative;
-}
+/* 下部広告部分 */
+/* items/index.htmlの広告cssを所々使いまわしています。 */
+// .ad-footer-contents {
+//   width: 100vw;
+  // background-image: image-url('furima-footer.png');
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: top center;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 5vh 15vw;
+//   color: #fff;
+//   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+// }
 
-.item-img {
-  width: 33vh;
-  height: 33vh;
-}
+// .ad-footer-title {
+//   font-size: 4vh;
+//   margin-bottom: 2vh;
+// }
 
-.sold-out {
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  text-align: center;
-  background-color: crimson;
-  transform: skewY(-10deg);
-}
-
-.sold-out>span {
-  color: #FFF;
-  font-size: 45px;
-  font: bold;
-}
-
-
-.item-info {
-  background-color: #FFF;
-  color: black;
-  padding: 1vw;
-}
-
-.item-name {
-  font-size: 2.5vh;
-}
-
-.item-price {
-  font-size: 1.5vh;
-  display: flex;
-  justify-content: space-between;
-}
-
-
-.star-btn {
-  display: flex;
-  align-items: center;
-}
-
-.star-icon {
-  height: 2vh;
-  width: 2vh;
-  margin-right: 0.5vw;
-}
-
-.star-count {
-  font-size: 2vh;
-}
-
-.hidden{
-  display: none;
-}
-
-/* //商品一覧 */
+// .ad-footer-explain {
+//   font-size: 3vh;
+//   line-height: 30px;
+// }
+/* //下部広告部分 */
