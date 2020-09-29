@@ -4,7 +4,7 @@ class User < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-  has_many :items
+  has_many :tweets
   belongs_to_active_hash :favorite_car
 
   validates :nickname, presence: true
