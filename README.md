@@ -50,13 +50,20 @@ Things you may want to cover:
 | Column             |  Type      | Options                        |
 | ------------------ | ---------- | ------------------------------ |
 | user               | references | null: false, foreign_key: true |
-
-
+| brand_id           | integer    | null: false                    |
+| type_id            | integer    | null: false                    |
+| model_year_id      | integer    | null: false                    |
+| title              | string     | null: false                    |
+| caption            | text       | null: false                    |
 
 
 ### Association
 - belongs_to :user
 - has_many :comments
+- belongs_to_active_hash :favorite_car
+- belongs_to_active_hash :type
+- belomgs_to_active_hash :model_year
+
 
 
 

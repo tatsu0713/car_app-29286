@@ -422,6 +422,7 @@ h2.new-title:after {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 90px;
+  margin-bottom: 80px;
 }
 
 .item-lists>.list {
@@ -479,6 +480,46 @@ h2.new-title:after {
 .star-count {
   font-size: 2vh;
 }
+
+
+.tweet {
+  position:relative;
+	display:inline-block;
+	padding:0 32px 0 16px;
+	color:rgb(73, 73, 73);
+	text-decoration:none;
+	height:24px;
+	line-height:24px;
+	border-radius:12px;
+  background: hsla(57, 71%, 90%, 0.644);
+  font-family: serif;
+}
+
+.tweet:before, .tweet:after{
+	content:"";
+	display:block;
+	position:absolute;
+}
+.tweet:before{
+	width:16px;
+	height:16px;
+	background:rgb(90, 90, 90);
+	border-radius:50%;
+	right:4px;
+	top:4px;
+}
+.tweet:after{
+	width:4px;
+	height:4px;
+	border-right:2px solid #ffffff;
+	border-top:2px solid #ffffff;
+	-webkit-transform:rotate(45deg);
+	transform:rotate(45deg);
+	right:10px;
+	top:9px;
+}
+
+
 
 .hidden{
   display: none;
