@@ -1,6 +1,6 @@
 <div class="items-sell-contents">
   <header class="items-sell-header">
-    <%= link_to "Weg", root_path, class:"second-logo" %>
+    <%= link_to "Weg", root_path, class:"third-logo" %>
   </header>
   <div class="items-sell-main">
     <h2 class="items-sell-title">Post Form</h2>
@@ -14,7 +14,7 @@
         <span class="indispensable">※</span>
       </div>
       <div class="click-upload">
-        <%= f.file_field :hoge, id:"item-image" %>
+        <%= f.file_field :image, id:"item-image" %>
       </div>
     </div>
     <div class="items-detail">
@@ -53,17 +53,16 @@
     </div>
     <div class="sell-btn-contents">
       <%= f.submit "To post" ,class:"sell-btn" %>
-      <%=link_to 'もどる', root_path, class:"back-btn" %>
+      <%=link_to 'Top', root_path, class:"top-btn" %>
     </div>
   </div>
-  <% end %>
-
-  <footer class="items-sell-footer">
+  <div class="items-sell-footer">
     <ul class="menu">
       <li><a href="#">プライバシーポリシー</a></li>
       <li><a href="#">weg利用規約</a></li>
       <li><a href="#">特定商取引に関する表記</a></li>
     </ul>
-    <%= link_to "Weg", root_path, class:"second-fotter-logo"%>
-  </footer>
+    <%= link_to "Weg", root_path, class:"third-fotter-logo"%>
+  </div>
+  <% end %>
 </div>
