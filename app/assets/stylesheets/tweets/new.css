@@ -58,6 +58,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  box-sizing:content-box；
 }
 
 .items-sell-title {
@@ -124,6 +125,7 @@
   width: 100%;
   background-color: #ffffff;
   font-family: serif;
+  padding-left: 20px;
   cursor: pointer;
 }
 
@@ -170,6 +172,7 @@
 /* 商品名と商品説明 */
 .new-items {
   padding: 2vh 0;
+  width: 60%;
 }
 
 .items-text {
@@ -212,7 +215,7 @@
 /* 下部ボタン */
 .sell-btn-contents {
   margin-top: 50px;
-  width: 100%;
+  width: 40%;
   text-align: center;
 }
 

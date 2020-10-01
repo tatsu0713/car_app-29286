@@ -2,11 +2,12 @@
   <header class="items-sell-header">
     <%= link_to "Weg", root_path, class:"third-logo" %>
   </header>
+  <%= form_with model: @tweet, url: tweets_path, local: true do |f| %>
   <div class="items-sell-main">
     <h2 class="items-sell-title">Post Form</h2>
     <%= form_with local: true do |f| %>
 
-    <%# render 'shared/error_messages', model: f.object %>
+    <%= render 'shared/error_messages', model: @tweet %>
 
     <div class="img-upload">
       <div class="weight-bold-text">
@@ -26,7 +27,7 @@
         <div class="bold-text">
           Brand
         </div>
-        <%= f.collection_select(:brand_id, FavoriteCar.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+        <%= f.collection_select(:brand_id, Brand.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
         <div class="bold-text">
           Type
         </div>
@@ -56,6 +57,7 @@
       <%=link_to 'Top', root_path, class:"top-btn" %>
     </div>
   </div>
+  <% end %>
   <div class="items-sell-footer">
     <ul class="menu">
       <li><a href="#">プライバシーポリシー</a></li>
