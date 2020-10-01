@@ -60,7 +60,7 @@ Things you may want to cover:
 ### Association
 - belongs_to :user
 - has_many :comments
-- belongs_to_active_hash :favorite_car
+- belongs_to_active_hash :brand
 - belongs_to_active_hash :type
 - belomgs_to_active_hash :model_year
 

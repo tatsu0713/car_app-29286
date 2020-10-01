@@ -8,9 +8,9 @@ class Tweet < ApplicationRecord
   has_one_attached :image
 
 
-  # validates :image, presence: { message: 'を選択してください'}
   validates :title, presence: true
   validates :caption, presence: true
+  validates :image, presence: { message: 'を選択してください'}
 
   validates :brand_id, :type_id, :model_year_id, numericality: { other_than: 1, message: 'を選択してください'}
 end

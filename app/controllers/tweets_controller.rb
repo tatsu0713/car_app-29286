@@ -1,6 +1,8 @@
 class TweetsController < ApplicationController
+  before_action :move_to_index, except: [:index]
 
   def index
+    @tweet = Tweet.all
   end
 
   def new
@@ -20,6 +22,10 @@ class TweetsController < ApplicationController
   private
 
   def tweet_params
-    params.permit(:image, :brand_id, :type_id, :model_year_id, :title, :caption).merge(user_id: current_user.id)
+    params.permit(:brand_id, :type_id, :model_year_id, :title, :caption, :image).merge(user_id: current_user.id)
+  end
+
+  def move_to_index
+    redirect_to new_user_session_path unless user_signed_in?
   end
 end
